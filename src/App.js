@@ -11,13 +11,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Count></Count>
-        <Colosel></Colosel> */}
-        <TapComponent>
-        </TapComponent>
+        <Count></Count>
+        <Colosel></Colosel>
+        <TapComponent name = "PP" age = {25}></TapComponent>
       </div>
     )
   }
 }
+
 
 export default App;

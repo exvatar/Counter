@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import propTypes from 'prop-types'
 
 export default class TapComponent extends Component {
 
@@ -19,9 +20,14 @@ export default class TapComponent extends Component {
                 <button onClick={() => this.setState({ count: "2" })}>Set 3</button>
                 <button onClick={() => this.setState({ count: "3" })}>Set 4</button>
                 <div>
-                    <img style={{width : "400px"}} src={picList[this.state.count]}></img>
+                    <img style={{ width: "400px" }} src={picList[this.state.count]}></img>
                 </div>
             </div>
         )
     }
 }
+TapComponent.propTypes = {
+    name: propTypes.string,
+    age: propTypes.number
+};
+
